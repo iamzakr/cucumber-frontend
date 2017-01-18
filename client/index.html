@@ -40,6 +40,7 @@
   <!-- injector:css -->
   <link rel="stylesheet" href="app/main/default.css">
   <link rel="stylesheet" href="app/main/material.css">
+  <link rel="stylesheet" href="app/main/shepherd-theme-default.css">
   <!-- endinjector -->
   <!-- endbuild -->
 
@@ -157,6 +158,13 @@
                 <md-button href="/#/apps" ng-click="$mdMenu.hide()">
                   <md-icon md-menu-align-target style="margin: auto 3px auto 0;">build</md-icon>
                   <span translate>Developer</span>
+                </md-button>
+              </md-menu-item>
+
+              <md-menu-item>
+                <md-button ng-click="start()">
+                  <md-icon md-menu-align-target style="margin: auto 3px auto 0;">build</md-icon>
+                  <span translate>Tour</span>
                 </md-button>
               </md-menu-item>
 
@@ -308,6 +316,8 @@
   <script src="bower_components/angular-gettext/dist/angular-gettext.js"></script>
   <script src="bower_components/moment-timezone/builds/moment-timezone-with-data-2010-2020.js"></script>
   <script src="bower_components/angular-scroll-glue/src/scrollglue.js"></script>
+  <script src="bower_components/tether/dist/js/tether.min.js"></script>
+  <script src="bower_components/tether-shepherd/dist/js/shepherd.min.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 
@@ -428,6 +438,7 @@
   <script src="components/splash_pages/splash_pages.filters.js"></script>
   <script src="components/splash_pages/splash_pages.services.js"></script>
   <script src="components/subscriptions/subscriptions.services.js"></script>
+  <script src="components/tour/tour.js"></script>
   <script src="components/upgrades/upgrades.controller.js"></script>
   <script src="components/upgrades/upgrades.directives.js"></script>
   <script src="components/upgrades/upgrades.services.js"></script>
